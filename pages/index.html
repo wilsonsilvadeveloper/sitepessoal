@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/index.css">
+    <title>Wilson</title>
+</head>
+<body>
+
+    <header>
+        <h1>Seja bem vindo ao site de </h1>
+        <h2 id="subtitulo"> wilson developer</h2>
+    </header>
+    
+    <main>
+        <section class="container">
+            <div id="sobremin">
+                <button type="button" id="sobre" onclick="sobreMin()" class="botao">Sobre Min</button>
+                <div id="divSobre">
+                    
+                    <p id="pSobre">
+                        Olá, me chamo wilson, sou um jovem estudante de engenharia de software, tenho 18 anos e estou cursando 
+                        engenahria de software. desde pequeno sempre gostei de tecnologia e sempre soube que queria me formar na aréa de tecnologia,
+                        e hoje estou aqui estudando para ser um programador.
+                    </p>
+                
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <button class="botao"  onclick="videoYoutube()" id="video" type="button">O que é programação?</button>
+
+            <div id="divVideo">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/s1z0TO4eZQc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   
+            </div>
+        </section>
+
+        <section class="container">
+            <button class="botao" type="button" onclick="musicas()" id="musica">Ouça uma música enquanto navega</button>
+            <div id="divmusica">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/5slFqRgMpa4ISRVBEHbX0t?utm_source=generator&theme=0" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="container-projetos">
+                <!--<button id="project" onclick="projetos()" type="button">Projetos</button>!-->
+
+                <section class="projetos">
+                    <div class="linksprojetos">
+                        <img src="../icones/calculadora.png" alt="" class="img-project">
+                        <p class="p">Calculadora de imc</p>
+                        <a href="https://calculadora-imc-gold.vercel.app/" target="_blank" class="link-project">Veja aqui</a>
+                    </div>
+
+                    <div class="linksprojetos">
+                        <img src="../icones/comida-e-restaurante.png" alt="" class="img-project">
+                        <p class="p">Restaurante</p>
+                        <a href="https://restaurante-taupe.vercel.app/" target="_blank" class="link-project">Veja aqui</a>
+                    </div>
+
+                    <div class="linksprojetos">
+                        <img src="../icones/temporizador.png" alt="" class="img-project">
+                        <p class="p">Temporizador</p>
+                        <a href="https://temporizador-rose.vercel.app/" target="_blank" class="link-project">Veja aqui</a>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!--<button onclick="linkSocial()" id="botaoSocial" type="button">Me siga nas redes socias</button>!-->
+       
+        <nav id="linksocial">
+           <a target="_blank" href="https://instagram.com/dev.wilson_?igshid=YmMyMTA2M2Y=" class="redesocial"><img class="img-social" src="../icones/instagram.png"></a>
+          <a target="_blank" href="https://www.youtube.com/channel/UC61YqSJXXjb622yC7vnS2VQ" class="redesocial"><img src="../icones/youtube.png" class="img-social"></a>
+          <a target="_blank" href="https://discord.gg/dudGdd5M" class="redesocial"><img src="../icones/discordia.png" class="img-social"></a> 
+          <a target="_blank" href="https://www.linkedin.com/in/wilson-dev" class="redesocial"><img src="../icones/linkedin.png" class="img-social"></a> 
+          <a target="_blank" href="https://github.com/wilsonsilvadeveloper" class="redesocial"><img src="../icones/github.png" class="img-social"></a> 
+        </nav>
+    </footer>
+
+</body>
+</html>
+
+<script src="../script/index.js"></script>

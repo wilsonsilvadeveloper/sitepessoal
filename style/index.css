@@ -1,0 +1,683 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+}
+
+body {
+    background: rgb(19,84,231);
+    background: linear-gradient(137deg, rgba(19,84,231,1) 0%, rgba(6,22,71,1) 100%, rgba(19,83,177,1) 100%, rgba(255,255,255,1) 100%);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+    height: 120px;
+    border-bottom: 1px solid black;
+    display: flex;
+    flex-direction: row;   
+    align-items: center; 
+    justify-content: center;
+}
+
+
+
+h1,  #subtitulo {
+    white-space: nowrap;
+    color: white;
+    font-size: 2.2rem;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+#subtitulo {
+    width: 300px;
+    color: antiquewhite;
+    overflow: hidden;
+    animation: subtitulo 2.5s 1 steps(40) normal;
+}
+
+@keyframes subtitulo {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 300px;
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+#sobremin {
+    margin-top: 5rem;
+    position: relative;
+}
+
+#sobre {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 140px;
+    height: 25px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
+    font-size: 1.2em;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+#divSobre {
+    display: none;
+    margin-top: 2rem;
+    max-width: 900px;
+    min-width: 300px;
+    position: relative;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 0.7rem;
+    border-radius: 2rem;
+    overflow: hidden;
+    animation: bio 0.9s 1 normal;
+}
+
+@keyframes bio {
+    from {
+        height: 0;
+    }
+    to {
+        height: 127px;
+    }
+}
+
+#sobre, #video, #musica {
+    width: 400px;
+    height: 30px;
+}
+
+#pSobre {
+    color: white;
+    font-size: 1.4rem;
+}
+
+#video {
+    margin-top: 4rem;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    font-size: 1.2em;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+#divVideo {
+    display: none;
+}
+
+iframe {
+    position: relative;
+    margin-top: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 1rem;
+}
+
+#musica {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 400px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    border-radius: 2rem;
+    font-size: 1.2em;
+    margin-top: 3rem;
+    cursor: pointer;
+}
+
+#divmusica {
+    display: none;
+    margin-top: 2rem;
+    max-width: 800px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.projetos {
+    margin-top: 4rem;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 900px;
+    height: auto;
+    display: grid;
+    grid-template-columns: 400px 400px;
+    gap: 80px;
+    margin-bottom: 2rem;
+}
+
+.linksprojetos {
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+    border: 1px solid black;
+    border-radius: 2rem;
+    padding: 1rem;
+}
+
+.img-project {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.p {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.link-project {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 20%;
+    transform: translateY(-20%);
+}
+
+.link-project:hover {
+    text-decoration: underline;
+}
+
+
+
+footer {
+    width: 100%;
+    height: 200px;
+    border-top: 1.5px solid black;
+    position: absolute;
+    background: rgb(19,84,231);
+    background: linear-gradient(137deg, rgba(19,84,231,1) 0%, rgba(6,22,71,1) 100%, rgba(19,83,177,1) 100%, rgba(255,255,255,1) 100%);
+    position: relative;
+    bottom: 0;
+    left: 0;
+
+}
+
+#linksocial {
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.img-social {
+    width: 120px;
+    height: 120px;
+}
+
+.img-social:hover {
+    width: 140px;
+    height: 140px;
+    transition: 1s;
+}
+
+.redesocial {
+    border-radius: 50%;
+    box-shadow:10px 10px 10px black;
+}
+
+
+
+@media screen and (max-width: 450px) {
+
+    header {
+        height: 70px;
+    }
+
+   
+    h1, #subtitulo {
+        font-size: 1.1rem;
+    }
+
+    #subtitulo {
+        width: 150px;
+        animation: subtitulo 2.5s 1 steps(40) normal;
+    }
+
+    
+    @keyframes subtitulo {
+        from {
+            width: 0%;
+        }
+    
+        to {
+            width: 150px;
+        }
+    }
+
+    #divSobre {
+        width: 300px;
+        border-radius: 1rem
+    }
+
+    #pSobre {
+        font-size: 0.8em;
+    }
+
+    #musica {
+        width: 300px;
+        font-size: 0.9rem;
+    }
+
+    #divmusica {
+        width: 300px;
+    }
+
+    iframe {
+        max-width: 400px;
+        height: 300px;
+    }
+
+    .container-projetos {
+        width: 100%;
+        padding: 0.8rem;
+    }
+
+    .projetos{
+        width: 100%;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+        margin-top: 2rem;
+        overflow: hidden;
+    }
+
+    .linksprojetos {
+            max-width: 250px;
+            max-height: 220px;
+            padding: 0.4;
+    }
+
+    .p {
+        font-size: 1.4rem;
+        margin-top: 1rem;
+    }
+
+    .img-project {
+        height: 80px;
+        width: 80px;
+    }
+
+    .img-social {
+        width: 50px;
+        height: 50px;
+    }
+
+    footer {
+        width: 100%;
+        height: 80px;
+        position: relative;
+        bottom: 0;
+        left: 0;
+    }
+
+    #linksocial {
+        height: 100%;
+        width: 100%;
+    }
+
+    .img-social:hover {
+        height: 70px;
+        width: 70px;
+    }
+}
+
+@media screen and (min-width: 450px) and (max-width: 550px) {
+
+    header {
+        height: 100px;
+    }
+
+   
+    h1, #subtitulo {
+        max-width: 100%;
+        font-size: 1.2rem;
+    }
+
+    #subtitulo {
+        width: 175px;
+        animation: subtitulo 2.5s 1 steps(40) normal;
+    }
+
+    
+    @keyframes subtitulo {
+        from {
+            width: 0%;
+        }
+    
+        to {
+            width: 175px;
+        }
+    }
+
+    #sobre, #video, #musica {
+        width: 350px;
+        height: 30px;
+        font-size: 1em;
+    }
+
+    #divSobre {
+        width: 400px;
+        border-radius: 1rem
+    }
+
+    #pSobre {
+        font-size: 1em;
+    }
+
+
+    #divmusica {
+        width: 300px;
+    }
+
+    iframe {
+        max-width: 400px;
+        height: 300px;
+    }
+
+    .container-projetos {
+        width: 100%;
+        padding: 0.8rem;
+    }
+
+    .projetos{
+        width: 100%;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+        margin-top: 2rem;
+        overflow: hidden;
+    }
+
+    .linksprojetos {
+            max-width: 250px;
+            max-height: 220px;
+            padding: 0.4;
+            background-color: rgba(0, 0, 0, 0.2);
+            border: none;
+    }
+
+    .p {
+        font-size: 1.4rem;
+        margin-top: 1rem;
+    }
+
+    .img-project {
+        height: 80px;
+        width: 80px;
+    }
+
+    .img-social {
+        width: 50px;
+        height: 50px;
+    }
+
+    footer {
+        width: 100%;
+        height: 80px;
+        position: relative;
+        bottom: 0;
+        left: 0;
+    }
+
+    #linksocial {
+        height: 100%;
+        width: 100%;
+    }
+
+    .img-social:hover {
+        height: 70px;
+        width: 70px;
+    }
+}
+
+@media screen and (min-width: 550px) and (max-width: 750px) {
+
+    header {
+        height: 100px;
+    }
+
+   
+    h1, #subtitulo {
+        max-width: 100%;
+        font-size: 1.5rem;
+    }
+
+    #subtitulo {
+        width: 215px;
+        animation: subtitulo 2.5s 1 steps(40) normal;
+    }
+
+    
+    @keyframes subtitulo {
+        from {
+            width: 0%;
+        }
+    
+        to {
+            width: 215px;
+        }
+    }
+
+    #sobre, #video, #musica {
+        width: 400px;
+        height: 30px;
+        font-size: 1em;
+    }
+
+    #divSobre {
+        width: 500px;
+        border-radius: 1rem
+    }
+
+    #pSobre {
+        font-size: 1.2em;
+    }
+
+    #divmusica {
+        width: 300px;
+    }
+
+    iframe {
+        max-width: 500px;
+        height: 300px;
+    }
+
+    .container-projetos {
+        width: 100%;
+        padding: 0.8rem;
+    }
+
+    .projetos{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .linksprojetos {
+            max-width: 270px;
+            max-height: 270px;
+            padding: 0.4;
+            background-color: rgba(0, 0, 0, 0.2);
+            border: none;
+    }
+
+    .p {
+        font-size: 1.4rem;
+        margin-top: 1rem;
+    }
+
+    .img-project {
+        height: 80px;
+        width: 80px;
+    }
+
+    .img-social {
+        width: 50px;
+        height: 50px;
+    }
+
+    footer {
+        width: 100%;
+        height: 80px;
+        position: relative;
+        bottom: 0;
+        left: 0;
+    }
+
+    #linksocial {
+        height: 100%;
+        width: 100%;
+    }
+
+    .img-social:hover {
+        height: 70px;
+        width: 70px;
+    }
+}
+
+
+@media screen and (min-width: 750px) and (max-width: 950px) {
+
+    header {
+        height: 100px;
+    }
+
+   
+    h1, #subtitulo {
+        max-width: 100%;
+        font-size: 1.75rem;
+    }
+
+    
+
+    #subtitulo {
+        width: 240px;
+        animation: subtitulo 2.5s 1 steps(40) normal;
+    }
+
+    
+    @keyframes subtitulo {
+        from {
+            width: 0%;
+        }
+    
+        to {
+            width: 240px;
+        }
+    }
+
+    #sobre, #video, #musica {
+        width: 400px;
+        height: 30px;
+        font-size: 1.2em;
+    }
+
+
+    #divSobre {
+        width: 600px;
+        border-radius: 1rem
+    }
+
+    #pSobre {
+        font-size: 1.4em;
+    }
+
+    #divmusica {
+        width: 500px;
+    }
+
+    iframe {
+        max-width: 500px;
+        height: 300px;
+    }
+
+    .container-projetos {
+        width: 100%;
+        padding: 0.8rem;
+    }
+
+    .projetos{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .linksprojetos {
+            max-width: 320px;
+            max-height: 270px;
+            padding: 0.4;
+            background-color: rgba(0, 0, 0, 0.2);
+            border: none;
+    }
+
+    .p {
+        font-size: 1.4em;
+        margin-top: 1rem;
+    }
+
+    .img-project {
+        height: 80px;
+        width: 80px;
+    }
+
+    .img-social {
+        width: 50px;
+        height: 50px;
+    }
+
+    footer {
+        width: 100%;
+        height: 80px;
+        position: relative;
+        bottom: 0;
+        left: 0;
+    }
+
+    #linksocial {
+        height: 100%;
+        width: 100%;
+    }
+
+    .img-social:hover {
+        height: 70px;
+        width: 70px;
+    }
+}
