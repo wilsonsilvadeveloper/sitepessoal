@@ -3,8 +3,19 @@ var video = document.getElementById("divVideo");
 var musica = document.getElementById("divmusica");
 var botaoMusica = document.getElementById("musica");
 
+var contador = 0;
+
 function sobreMin(){
-    sobremin.style.display = "flex"
+    
+    if (contador == 0 ) {
+        sobremin.style.display = "flex";
+        contador++;
+    }
+
+    else if (contador == 1) {
+        sobremin.style.display = "none";
+        contador = 0;
+    }
 }
 
 function videoYoutube() {
