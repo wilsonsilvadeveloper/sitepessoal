@@ -81,6 +81,7 @@ h1,  #subtitulo {
     margin-top: 2rem;
     max-width: 900px;
     min-width: 300px;
+    height: auto;
     position: relative;
     top: 70%;
     left: 50%;
