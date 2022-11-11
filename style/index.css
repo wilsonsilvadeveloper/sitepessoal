@@ -97,7 +97,7 @@ h1,  #subtitulo {
         height: 0;
     }
     to {
-        height: 127px;
+        height: auto;
     }
 }
 
